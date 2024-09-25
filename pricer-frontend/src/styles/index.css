@@ -1,0 +1,73 @@
+:root {
+    --main-rgb: 173, 216, 230;
+    --nav-rgb: 0, 98, 139;
+    --button-rgb: 255, 255, 255;
+    --button-text-rgb: 0, 0, 0;
+    color-scheme: light;
+}
+
+*{
+    transition-duration: 0.3s;
+}
+
+body {
+    background-color: rgba(var(--main-rgb));
+    margin: 0;
+}
+
+nav {
+    background: rgba(var(--nav-rgb));
+    height: 12vh;
+    align-items: center;
+    display: flex;
+    margin-bottom: 2vh; 
+}
+
+nav > svg {
+    margin-left: 2vw;
+    margin-right: 10vw;
+}
+
+nav > .upper--bar {
+    gap: 15px;
+}
+
+button.btn {
+    border-radius: 6px;
+    background-color: rgba(var(--button-rgb));
+    font-size: 16px;
+    color: rgba(var(--button-text-rgb));
+    border-color: rgba(var(--button-rgb));
+}
+
+button.btn:hover {
+    opacity: 0.9;
+    border-color: black;
+}
+
+th {
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: ghostwhite;
+}
+
+a {
+    color: rgba(var(--button-text-rgb));
+}
+
+.table-bordered > tbody > tr:nth-child(n+1) > td, .table-bordered > thead > tr:nth-child(n+1) > th {
+    background-color: rgba(var(--button-rgb));
+    color: rgba(var(--button-text-rgb));
+}
+
+/* Dark theme */
+
+.dark {
+    --main-rgb: 25, 69, 83;
+    --nav-rgb: 7, 19, 23;
+    --button-rgb: 71, 106, 117;
+    --button-text-rgb: 255, 255, 255;
+    color-scheme: dark;
+}
